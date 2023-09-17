@@ -22,7 +22,7 @@ next_hours_table = {}
 for i in range(6):
     next_hours_table[next_hours[i][0]] = next_hours_temps[i][0].replace("\xa0", " ")
 
-print(next_hours_table)
-
+# print(next_hours_table)
+df = pd.DataFrame(next_hours_table, index=[""])
+print(f"Upcoming 5 hour temperature: \n \n {df}")
 # Access Token: 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
-# {'Now': '30 °C', '15:00': '30 °C', '16:00': '31 °C', '17:00': '31 °C', '18:00': '29 °C', '19:00': '28 °C'}
