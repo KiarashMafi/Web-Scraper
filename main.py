@@ -38,6 +38,3 @@ current_temp = get_current_temp(websitepage)
 upcoming_hours_df = get_next_hours_temp(websitepage)
 
 print(f"\nCurrent temperature for {location[1]}, {location[0]}: {current_temp} \n \nUpcoming 5 hours: \n {upcoming_hours_df}")
-
-
-# Access Token: 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
